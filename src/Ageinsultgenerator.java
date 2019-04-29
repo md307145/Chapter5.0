@@ -1,3 +1,4 @@
+/*
 import java.util.Scanner;
 
 public class Ageinsultgenerator {
@@ -32,3 +33,4 @@ public class Ageinsultgenerator {
             System.out.println(result);
         }
     }
+*/
