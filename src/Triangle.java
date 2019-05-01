@@ -27,6 +27,7 @@ public class Triangle {
         Scanner k=new Scanner(System.in);
         System.out.println("enter a side ");
         sideAll=k.nextDouble();
+        equalmath(sideAll);
 
     }
     public static  void triangleDoesNotEcist(){
@@ -83,7 +84,7 @@ public class Triangle {
     public static void equalmath(double sideAll){
         double a;
         a= sideAll;
-        System.out.println("");
+        System.out.println(" If one side is "+ a+" then, all the side are ="+a);
 
     }
 }
