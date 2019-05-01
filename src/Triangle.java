@@ -20,6 +20,34 @@ public class Triangle {
             triangleDoesNotEcist();
     }
     public static void isoscelesTriangle(){
+        double a;
+        double b;
+        double c;
+        String side;
+        Scanner k=new Scanner(System.in);
+        System.out.println("What side are you solving for to find");
+        side=k.next();
+
+        if(side. equals ("a")) {
+            System.out.println("What is side b");
+            b = k.nextDouble();
+            System.out.println("What is side C");
+            c = k.nextDouble();
+            Amath(b,c,side);
+            }
+            else if(side.equals("b")){
+            System.out.println("What is side a ");
+            a=k.nextDouble();
+            System.out.println("What is side c ");
+            c=k.nextDouble();
+            Bmath(a,c,side);
+            }
+            else if(side.equals("c")){
+            System.out.println("enter side A or side B");
+            a=k.nextDouble();
+            Cmath(a,side);
+        }
+
 
     }
     public static void equilateralTriangle(){
@@ -86,5 +114,22 @@ public class Triangle {
         a= sideAll;
         System.out.println(" If one side is "+ a+" then, all the side are ="+a);
 
+    }
+    public static void Amath( double b, double c ,String side){
+        double a;
+        a= b;
+
+
+        System.out.println(" Side A = side B. Side A is "+ a);
+    }
+    public static void Bmath(double a, double c, String side){
+        double b;
+        b=a;
+        System.out.println("Side B is = to half of C. It also is = to A making B = to "+b);
+    }
+    public static void Cmath(double a, String side){
+        double c;
+        c=a*2;
+        System.out.println("side C is "+c);
     }
 }
