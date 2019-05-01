@@ -82,7 +82,8 @@ public class Triangle {
     }
     public static void equalmath(double sideAll){
         double a;
-        a= sideAll
+        a= sideAll;
+        System.out.println("");
 
     }
 }
