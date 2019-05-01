@@ -7,8 +7,8 @@ public class Triangle {
       Scanner k=new Scanner(System.in);
        System.out.println(" What type of triangle are you solving for ");
         System.out.println("1.Right ");
-        System.out.println("2.Isoceles");
-        System.out.println("3. Equalateral");
+        System.out.println("2.Isosceles");
+        System.out.println("3. Equilateral");
         Choise= k.nextInt();
         if(Choise ==1)
             rightTriangle();
@@ -113,6 +113,11 @@ public class Triangle {
         double a;
         a= sideAll;
         System.out.println(" If one side is "+ a+" then, all the side are ="+a);
+        double H;
+        H= a/2;
+        double Height;
+        Height= Math.sqrt(H);
+        System.out.println("The height of this triangle is "+ Height);
 
     }
     public static void Amath( double b, double c ,String side){
