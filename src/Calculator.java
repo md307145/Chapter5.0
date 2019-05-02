@@ -10,7 +10,7 @@ public class Calculator {
         String Choise;
         System.out.println("what do you need. add, sub, mult, div");
         Choise = k.next();
-        if (Choise.equalsIgnoreCase("Add") ) {
+        if (Choise.equalsIgnoreCase("Add")|| Choise.equals("+") ) {
             double A;
             double B;
             System.out.println("Add is (A+B). Enter a number for A");
@@ -18,7 +18,7 @@ public class Calculator {
             System.out.println("Enter a number for B");
             B = k.nextDouble();
             Addmath(A, B);
-        } else if (Choise.equalsIgnoreCase("Sub")) {
+        } else if (Choise.equalsIgnoreCase("Sub")|| Choise.equals("-")) {
             double A;
             double B;
             System.out.println("Sub is (A-B). Enter a number for A");
@@ -26,7 +26,7 @@ public class Calculator {
             System.out.println("Enter a number for B");
             B = k.nextDouble();
             Submath(A,B);
-        }else if(Choise.equalsIgnoreCase("Mult")) {
+        }else if(Choise.equalsIgnoreCase("Mult")|| Choise.equals("*")) {
             double A;
             double B;
             System.out.println("mult is (A*B). Enter a number for A");
@@ -34,7 +34,7 @@ public class Calculator {
             System.out.println("Enter a number for B");
             B=k.nextDouble();
             multmath(A,B);
-        }else if(Choise.equalsIgnoreCase("Div")){
+        }else if(Choise.equalsIgnoreCase("Div")|| Choise.equals("/")){
             double A;
             double B;
             System.out.println("Div is (A/B). Enter a number for A");
