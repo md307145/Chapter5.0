@@ -34,7 +34,7 @@ public class Calculator {
             System.out.println("Enter a number for B");
             B=k.nextDouble();
             multmath(A,B);
-        }else if(Choise.equalsIgnoreCase("Div")|| Choise.equals("/")){
+        }else if(Choise.equalsIgnoreCase("Div")|| Choise.equals("/)){
             double A;
             double B;
             System.out.println("Div is (A/B). Enter a number for A");
