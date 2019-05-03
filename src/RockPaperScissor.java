@@ -9,7 +9,16 @@ public class RockPaperScissor {
         System.out.println("Chose 2 for paper");
         System.out.println("Chose 3 for scissor");
         a=k.next();
-        if()
+        if(a.equals("1")){
+
+        }
+        else if (a.equals("2")){
+
+        }
+        else if(a.equals("3")){
+
+        }
+        public static void random(){}
     }
 }
 
