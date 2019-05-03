@@ -10,7 +10,7 @@ public class Calculator {
         String Choise;
         System.out.println("what do you need. add, sub, mult, div");
         Choise = k.next();
-        if (Choise.equalsIgnoreCase("Add")|| Choise.equals("+") ) {
+        if (Choise.equalsIgnoreCase("Add") || Choise.equals("+")) {
             double A;
             double B;
             System.out.println("Add is (A+B). Enter a number for A");
@@ -18,56 +18,58 @@ public class Calculator {
             System.out.println("Enter a number for B");
             B = k.nextDouble();
             Addmath(A, B);
-        } else if (Choise.equalsIgnoreCase("Sub")|| Choise.equals("-")) {
+        } else if (Choise.equalsIgnoreCase("Sub") || Choise.equals("-")) {
             double A;
             double B;
             System.out.println("Sub is (A-B). Enter a number for A");
             A = k.nextDouble();
             System.out.println("Enter a number for B");
             B = k.nextDouble();
-            Submath(A,B);
-        }else if(Choise.equalsIgnoreCase("Mult")|| Choise.equals("*")) {
+            Submath(A, B);
+        } else if (Choise.equalsIgnoreCase("Mult") || Choise.equals("*")) {
             double A;
             double B;
             System.out.println("mult is (A*B). Enter a number for A");
-            A=k.nextDouble();
+            A = k.nextDouble();
             System.out.println("Enter a number for B");
-            B=k.nextDouble();
-            multmath(A,B);
-        }else if(Choise.equalsIgnoreCase("Div")|| Choise.equals("/)){
+            B = k.nextDouble();
+            multmath(A, B);
+        } else if (Choise.equalsIgnoreCase("Div") || Choise.equals("/")) {
             double A;
             double B;
             System.out.println("Div is (A/B). Enter a number for A");
             A = k.nextDouble();
             System.out.println("Enter a number for B");
             B = k.nextDouble();
-            divamth(A,B);
+            divamth(A, B);
+        }
+        else
+            System.out.println(" Try again you messed up");
+                }
+
+
+        public static void Addmath ( double A, double B){
+            double result;
+            result = A + B;
+            System.out.println("The solution of " + A + " - " + B + " is " + result);
+        }
+        public static void Submath ( double A, double B){
+            double result;
+            result = A - B;
+            System.out.println("the solution of " + A + " - " + B + " is " + result);
+        }
+        public static void multmath ( double A, double B){
+            double solution;
+            solution = A * B;
+            System.out.println("The solution for " + A + " * " + B + " is " + solution);
+        }
+        public static void divamth ( double A, double B){
+            double solution;
+            solution = A / B;
+            System.out.println("The solution for " + A + " * " + B + " is " + solution);
+
         }
 
-
     }
-
-    public static void Addmath(double A, double B) {
-        double result;
-        result = A + B;
-        System.out.println("The solution of " + A + " - " + B + " is " + result);
-    }
-    public static void Submath(double A, double B){
-        double result;
-        result=A-B;
-        System.out.println("the solution of "+A+" - "+B+" is "+ result);
-    }
-    public static void multmath(double A, double B){
-        double solution;
-        solution = A*B;
-        System.out.println("The solution for "+A+" * "+B+" is "+solution);
-    }
-    public static void divamth(double A,double B){
-        double solution;
-        solution = A/B;
-        System.out.println("The solution for "+A+" * "+B+" is "+solution);
-
-    }
-}
 
 
